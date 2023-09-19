@@ -1,0 +1,35 @@
+.bg>.header {
+    font-size: 8em;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    margin: 10px;
+}
+
+.carousel {
+    margin: 2em;
+    background-color: rgba(255, 255, 255, 0.156);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 500px;
+    overflow-x: scroll;
+}
+
+.carousel div {
+    margin: 12px;
+    width: 200px;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.334);
+    flex: 0 0 auto;
+}
+
+.carousel::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #185229;
+}

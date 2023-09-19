@@ -1,0 +1,54 @@
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+}
+
+.bg {
+    max-width: 920px;
+    height: 100lvh;
+    display: flex;
+    padding: 10px;
+    background-color: #003710;
+    flex-flow: column;
+    overflow: scroll;
+}
+
+.row {
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.row-reversed {
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    flex-flow: row-reversed nowrap;
+}
+
+.imagem {
+    width: 500em;
+    height: 42em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2em;
+}
+
+.imagem:hover {
+    box-shadow: -1px -1px 35px 0px rgba(255, 255, 255, 0.6) inset;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.sidetext {
+    margin: 2em;
+    color: white;
+    font-size: 2em;
+    height: fit-content;
+}
