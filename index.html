@@ -168,7 +168,8 @@
     </div>
   </section>
 
-  <!--Inscrição-->
+
+
   <section class="programacao-box-cards inscricao" id="inscricao">
 
     <head class="program-container center">
@@ -187,14 +188,16 @@
                       <li class="program-item inscr "><img src="./imgs/seta.png" alt="ícone seta" class="seta-list">
                         <a class="program-link   font-size__enrollment"><label class="font-size__enrollment"
                             for="tnome">Nome:</label>
-                          <input type="text" name="tnome" size="30rem" maxlength="55" placeholder="Digite seu nome"
+                          <input type="text" id="tnome" name="tnome" size="30rem" maxlength="55" placeholder="Digite seu nome"
                             required="required" /></a>
                       </li>
+                      
                       <li class="program-item inscr "><img src="./imgs/seta.png" alt="ícone seta" class="seta-list">
                         <a class="program-link   font-size__enrollment"><label for="tnome">E-mail:</label>
-                          <input type="email" name="temail" size="30rem" maxlength="55" placeholder="Digite seu E-mail"
+                          <input type="email" id="temail" name="temail" size="30rem" maxlength="55" placeholder="Digite seu E-mail"
                             required="required" /></a>
                       </li>
+
                       <li class="program-item inscr "><img src="./imgs/seta.png" alt="ícone seta" class="seta-list">
                         <a class="program-link   font-size__enrollment"><label for="tnome">Telefone:</label>
                           <input type="tel" id="telefone" pattern="\d{5}-?\d{4}" title="99111-1111"
@@ -220,17 +223,11 @@
                         <a class="program-link   font-size__enrollment"><label for="tnome">Curso:</label>
                         </a>
                             <select name=“selOpcao” class="checkboxx" >
-                              <option value=“1” selected=“selected”> BSI </option><option value=“2”> BCC </option>
-                              <option value=“3”> ADS </option> <option value=“4”> ADS </option> <option value=“5”> ADS </option>
+                              <option value=“1” selected=“selected”> Sistemas de Informação </option><option value=“2”> Ciência da Computação </option>
+                              <option value=“3”> Engenharia de Software </option> <option value=“4”> Análise e Desenvolvimento de Sistemas </option> <option value=“5”> Outros </option>
                               </select>
-                      </li>
-                      
-
-                      <li class="program-item inscr "><img src="./imgs/seta.png" alt="ícone seta" class="seta-list">
-                        <a class="program-link   font-size__enrollment"><label for="tnome">Endereço completo:</label>
-                          <input type="text" name="tnome" size="30rem" maxlength="55" placeholder="Digite seu endereço"
-                            required="required" /></a>
-                      </li>
+                      </li><br>
+                
 
                       <li class="program-item inscr "><img src="./imgs/seta.png" alt="ícone seta" class="seta-list">
                         <a class="program-link   font-size__enrollment"><label for="tarq">Carregue sua
@@ -248,12 +245,22 @@
                         <input type="radio" name="op" value="2" class="check" />Não<br />
                       </li>
                       <br />
-                      <div class="botoes">
-                        <input class="botao" type="button" name="bmensagem" value="OK"
-                          onclick="alert('Gravado com sucesso!')" />
-                        <input class="botao" type="reset" name="blimpar" value="LIMPAR" />
-                      </div>
-                    </ul><br>
+                      
+                    <div class="botoes">
+                      <input class="botao" type="button" name="bmensagem" value="OK" onclick="gravarNome()" />
+                      <input class="botao" type="reset" name="blimpar" value="LIMPAR" />
+                  </div>
+                  </ul>
+                  <br>
+
+                  <script>
+                      function gravarNome() {
+                          var nome = document.getElementById("tnome").value
+                          var email = document.getElementById("temail").value
+                          alert("Obrigado pela inscrição, " + nome + "!\nEm breve, mais informações no e-mail '" + email + "'")
+                      }
+                  </script>
+
                 </div>
                 </form>
                 </p>
@@ -266,8 +273,7 @@
       <br /><br />
     </head>
   </section>
-  <!--Inscrição-->
-  <!--###-->
+
 
   <section class="contato-box flex-column" id="contato">
 
