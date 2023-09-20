@@ -156,6 +156,11 @@
   align-items: center;
 }
 
+.program-item-teste {
+  display: flex;
+  align-items: start;
+}
+
 .program-link:link,
 .program-link:visited {
   text-decoration: none;
@@ -630,4 +635,9 @@ h1#top {
   text-align: center;
   font-size: 48pt;
   color: white;
+}
+
+.checkboxx {
+  width: 15rem;
+  margin-left: 1rem;
 }
