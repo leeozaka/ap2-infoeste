@@ -65,3 +65,27 @@ body {
     font-size: 2em;
     height: fit-content;
 }
+
+.mainline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80em;
+    align-items: center;
+}
+.mainline .sidetext {
+    margin: 0;
+    font-size: 8em;
+    font-weight: 600;
+    height: 3em;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#fippetec { 
+    border-radius: 1em;
+    width: 80%;
+}
+

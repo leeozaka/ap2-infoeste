@@ -61,7 +61,6 @@
   align-self: center;
   justify-self: end;
   padding: 1rem 2rem;
-
 }
 
 .menu-item {
@@ -76,6 +75,9 @@
   overflow: hidden;
   color: #fff;
   padding: 0.4rem;
+}
+.menu-item#edant {
+  width: max-content;
 }
 
 .menu-item:hover {
